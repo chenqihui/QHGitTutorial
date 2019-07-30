@@ -59,11 +59,13 @@ cat id_rsa.pub
 
 [New Repository] 可能网站的按钮位置不同
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/1.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/1.png)
+<!--![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/1.png)-->
 
 然后输入项目的名称，项目为 public 即可。确定之后会有如下说明，可以先忽略。
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/2.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/2.png)
+<!--![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/2.png)-->
 
 这样其实一个仓库就已经创建完成（先有个记忆，这是一个远程仓库），接下来看看如何使用
 
@@ -77,7 +79,8 @@ cat id_rsa.pub
 
 clone 也就是复制、克隆。将前面创建的仓库给同步到本地
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/3.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/3.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/3.png)-->
 
 可以在 Git 服务器上创建仓库后的页面看到如下地址：
 
@@ -88,7 +91,8 @@ HTTPS：https://github.com/chenqihui/QHGitTutorial.git
 
 找到 客户端 上 [Clone Repository] 相应的按钮，点击后选择 URL ，输入上面地址其中一个即可，还有保存本地的文件夹地址路径，确定后就能在设置的保存地址上看到仓库的文件夹了，这里就是将要保存的文件的地方。
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/4.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/4.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/4.png)-->
 
 由于是新仓库，即什么都没有，无需先再更新（其实 clone 的时候已经是包括更新了，也就是后面的 pull 操作）
 
@@ -96,23 +100,27 @@ HTTPS：https://github.com/chenqihui/QHGitTutorial.git
 
 先在文本编辑器新建一个文本并写上随意的文字后，保存到 clone 提到的文件夹里面。回到 Git客户端 会发现在列表处多了添加的文件，并且前面是有 勾选 功能。勾选上意思就是该文件的修改将被后续提交。对于此次的新文件，它也相当于 add，将文件添加到 Git 跟踪上，后面删除文件也会有对应的红色状态。add 只会出现在文件第一次加入的时候
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/5.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/5.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/5.png)-->
 
 #### commit
 
 可以留意下勾选与不勾选时，[Commit to master] 的按钮状态。其实按钮跟踪的是文件的改变，新增、删除、修改都算改变。而第一次 add 的时候，取消全部相当没有改变。接着就是 commit（提交）了，最好在输入栏里添加 commit 信息，即提交的内容，方便查看该提交的内容。接着可以在历史列表里面看到本次提交。可以再对文本内容进行修改就会看到不需要勾选，接着再提交一次看看历史列表。
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/6.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/6.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/6.png)-->
 
 #### push
 
 然后回到提交页面，此两处会有 [Publish branch] ，其实就是 push，推送到创建的仓库。在点击前，可以先看看页面下依然什么都没有。好了，点击看看，OK之后再次刷新仓库页面看看，是否多了新增的文件。
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/7.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/7.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/7.png)-->
 
 到这里就算了解日常推送内容到远程仓库。
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/8.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/8.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/8.png)-->
 
 #### fetch
 
@@ -138,15 +146,18 @@ pull 拉取就是再次操作，点击它之后本地仓库就将更新的文件
 
 此时的 pull 会产生 merge 操作
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/10.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/10.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/10.png)-->
 
 #### conflict
 
 冲突就是 merge 时修改的是同个文件时最常出现的情况，客户端会提示你冲突的文件，此时用编辑工具打开，看到如下的
 
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/12.png)
 ![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/12.png)
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/11.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/11.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/11.png)-->
 
 ~~~
 <<<<<<< HEAD
@@ -165,7 +176,8 @@ remote Update3
 
 修改之后会发现没有 conflict 了，而其他的客户端可能需要需要自己点击<已解决冲突>。总之解决之后就可以继续 commit & push 了。merge 会产生一个新的 commit 来记录此次操作。
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/13.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/13.png)
+<!--!![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/13.png)-->
 
 其实上面的情况很正常，不过 conflict 也可以避免，就是不在未 push & pull 下修改同一个文件即可。而按正常流程 commit & push，一个人操作的会理论上不太会遇到。而像我们开发其实大部分 merge 都不一定有出现 conflict。
 
@@ -173,7 +185,8 @@ remote Update3
 
 好了再补充一点，如果回到家里，记得修改的部分，想不要公司的修改。两种情况，一是未 commit，那么直接 Discharge 或者还原文件即可。而第二种是已经 commit，只是未 push，那就需要撤销本次 commit。在历史列表或者提交记录里面大部分可以出发 [Revert this commit]，点击后会多次新的 commit ，但是会修改回来。当然还有其他操作，不过需要结合命令 checkout，这不在本次教学里面
 
-![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/14.png)
+![](https://github.com/chenqihui/QHGitTutorial/blob/master/QHGitTutorialImageSources/14.png)
+<!--![](https://anakinpublicspace-1253727175.cos.ap-chengdu.myqcloud.com/blog/GitTutorial/14.png)-->
 
 ### 小结
 
